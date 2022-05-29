@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+gem 'graphql', '1.11.6'
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
@@ -29,7 +30,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
-
+gem "benchmark-ips"
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -49,3 +50,5 @@ group :development do
   # gem "spring"
 end
 
+gem 'graphiql-rails', '1.7.0', group: :development
+# gem "graphiql-rails", group: :development
